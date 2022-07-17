@@ -1,0 +1,167 @@
+*{
+    margin:0;
+}
+
+header{
+    background-color: #AAAAAA;
+    font-weight: bold;
+}
+
+.active{
+    color: black;
+    font-weight: bolder;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 90%;
+    background-color: #CCC;
+    background-attachment: scroll;
+    /* border: 3px solid black; */
+}
+
+nav{
+    height: 10%;
+    width: 100%;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    height: 90%;
+    /* border: 1px solid green; */
+}
+
+article{
+    margin-top: 0px;
+    padding: 0 20px;
+    width: 50%;
+    height: 80%;
+    text-align: justify;
+    /* border: 2px solid pink; */
+}
+
+p.lh-lg{
+    color:
+    linear-gradient(90deg, red, blue);
+}
+.main-text{
+    width: 100%;
+    text-align: left;
+}
+h5 {
+    text-align: left;
+}
+
+a.links{
+    height: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#courses{
+    text-align: center;
+}
+
+.courses{
+    text-align: center;
+    text-decoration: none;
+}
+
+.courses:hover{
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.links:hover{
+    background-color: #AAAAAA;
+}
+
+.legend{
+    width: 45%;
+    height: 80%;
+    position: fixed;
+    margin-left: 55%;
+    /* border: 1px solid red; */
+}
+
+
+h1{
+    color: green;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        height: 15%;
+    }
+    div.container-fluid {
+      font-size: 4.5vw;
+    }
+    body{
+        position: relative;
+    }
+
+    body.index::after{
+        background: url(programmer.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    body.coffee::after{
+        background: url(barista.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    body.develop::after{
+        background: url(programming.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    body.education::after{
+        background: url(math.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    body.about1::after{
+        background: url(tasks.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    body::after{
+        content:"";
+        opacity: 0.4;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: fixed;
+        z-index: -1;
+    }
+
+    div.img{
+        display: none;
+        width: 0px;
+        height: 0px;
+        margin-left: 0%;
+        border: 1px solid red;
+    }
+
+     article{
+        width: 100%;
+    }
+
+}
